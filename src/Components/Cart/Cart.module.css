@@ -1,0 +1,38 @@
+.main {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.navBar {
+  margin-top: 20px;
+}
+
+.navBarContent {
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.search input {
+  display: block;
+  width: 150px;
+  height: 25px;
+  padding-left: 30px;
+}
+
+.addProductBtn {
+  width: 150px;
+  height: 25px;
+}
+
+.addProductBtn span {
+  color: white;
+}
+
+.spinner {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,50 @@
+.formContainer {
+  max-width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+.formRow {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.title {
+  font-weight: normal;
+}
+.form {
+  width: 100%;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #e3e4e5;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4eb700;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.button .buttonText {
+    color: white;
+}
+
+.error {
+  text-align: center;
+}
