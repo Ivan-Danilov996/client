@@ -9,12 +9,12 @@ class Auth extends React.Component {
   }
 
   componentDidMount() {
-    if (document.cookie != "isAutorized=true") {
+    if (document.cookie != "isAuthorized=true") {
       axios
         .get("http://test.ru/auth")
         .then((response) => response)
         .then((result) => {
-          if (result.isAutorise) {
+          if (result.isAuthorized) {
             console.log("вы авторизованы");
           } else {
             console.log("пройдите регистрацию");
@@ -28,7 +28,7 @@ class Auth extends React.Component {
     let formData = new FormData();
     formData.append("text", this.props.value);
     axios
-        .post("auth", formData)
+        .post("http://test.ru/auth", formData)
         .then((response) => {
           console.log(response.data);
           this.props.handleSubmit(response.data)

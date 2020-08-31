@@ -1,4 +1,4 @@
-import * as axios from "axios";
+
 
 const HANDLE_CHANGE = "HANDLE_CHANGE";
 const HANDLE_SUBMIT = "HANDLE_SUBMIT";
@@ -20,8 +20,8 @@ const authReducer = (state = initialState, action) => {
     }
     case HANDLE_SUBMIT: {
 
-        if(action.data.isAutorise) {
-            document.cookie = "isAutorized=true";
+        if(action.data.isAuthorized) {
+            document.cookie = "isAuthorized=true";
             stateCopy.redirect = true;
         } else {
             stateCopy.showError = true;
